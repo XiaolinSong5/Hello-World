@@ -1,3 +1,6 @@
+'use strict';
+
+// Register `phoneList` component, along with its associated controller and template
 angular.
 module('phoneList').
 component('phoneList', {
@@ -10,6 +13,5 @@ component('phoneList', {
             $http.get('phones/phones.json').then(function(response) {
                 self.phones = response.data;
             });
-        }
-    ]
+        }]
 });
